@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/396181bd49.js" crossorigin="anonymous"></script>
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body onload="render()">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md bg-success text-white ">
+            <a class="text-white navbar-brand" hred="#">
+                <i class="fab fa-pagelines"></i> Red-Store
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item active">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                </ul>
+                <form action="" class="form-inline mt-2 mt-md-0">
+                    <a class="text-white nav-link" href="#">
+                        <i class="text-warning fas fa-shopping-cart"></i> Shopping Cart
+                        <i style="color: yellow;" id="cart_n"></i>
+                    </a>
+                    <a href="admin/login.html" class="nav-link text-white">
+                        <i class="far fa-user"></i> Administrator
+                    </a>
+                </form>
+            </div>        
+
+        </nav>
+    </header>  
+    <div class="conatainer mt-3">
+        <main role="main">
+            <div class="row">
+                <div class="col">
+                    <div class="table-responsive-sm">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <hr class="featurette-divider">
+        </main>
+
+    </div>
+    <footer class="container">
+        <p class="float-right">
+            <a href="#">TOP</a>
+        </p>
+        <div class="row">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo corporis dolorum, atque dolorem debitis, incidunt voluptate sapiente maiores deleniti sequi culpa beatae nulla ipsum dignissimos, obcaecati eligendi! Distinctio, quisquam eveniet?
+        </div>
+
+    </footer>  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./cart.js"></script>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+
+
+
+</body>
+</html>
