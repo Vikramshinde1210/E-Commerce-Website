@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/396181bd49.js" crossorigin="anonymous"></script>
+</head>
+<body onload="renderTable()">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md bg-success text-white ">
+            <a class="text-white navbar-brand" hred="#">
+                <i class="fab fa-pagelines"></i> Red-Store
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto menu">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Orders</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="./order.html" class="nav-link">Edit Orders</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a target="_blank" href="../index.html" class="nav-link">Website</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a target="_blank" href="../cart.html" class="nav-link">Shopping Cart</a>
+                    </li>
+                </ul>
+                <form action="" class="form-inline mt-2 mt-md-0">
+                    <a class="text-white nav-link" href="../index.html">
+                        EXIT
+                    </a>
+
+                </form>
+            </div>        
+
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container mt-4">
+            <main role="main">
+                <div class="row">
+                    <div class="col">
+                        <h1>ORDERS</h1>
+                        <div class="table-responsive-sm">
+                            <table id="table" class="table table-hover">
+                               <thead>
+                                   <tr>
+                                       <th scope="col">ID</th>
+                                       <th scope="col">ORDER</th>
+                                       <th scope="col">TOTAL</th>
+                                   </tr>
+                               </thead> 
+                               <tbody id="table">
+
+                               </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+                <footer class="container">
+                    <p class="float-right">
+                        <a href="#">TOP</a>
+                    </p>
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo corporis dolorum, atque dolorem debitis, incidunt voluptate sapiente maiores deleniti sequi culpa beatae nulla ipsum dignissimos, obcaecati eligendi! Distinctio, quisquam eveniet?
+                    </div>
+        
+                </footer>
+            </main>
+        </div>
+    </div>   
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./table.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+
+
+</body>
+</html>
